@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Formular';
+  src: url('../static/Formular-Medium.woff2') format('woff2'),
+    url('../static/Formular-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+html, body, #root, .app {
+	width: 100%;
+}
+body {
+	min-height: 100%;
+  margin: 0;
+}
+body,
+.input {
+  font-family: 'Formular',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+} 
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}
+.button,
+.fieldset,
+.input,
+.form,
+.link {
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  border: none;
+  background: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.button,
+.link {
+  cursor: pointer;
+}
+.button:hover,
+.button:focus,
+.link:hover,
+.link:focus {
+  outline: none;
+  opacity: .6;
+}
+.button:active,
+.link:active {
+  opacity: 1;
+}
+.input:focus {
+  outline: none;
+}
+.app {
+  width: 100%;
+  min-width: 320px;
+  position: relative;
+  background-color: #EBF1F5;
+  overflow: hidden;
+}
