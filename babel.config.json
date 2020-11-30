@@ -6,9 +6,9 @@
       {
         "targets": {
           "edge": "17",
-          "firefox": "60",
-          "chrome": "67",
-          "safari": "11.1"
+          "firefox": "28",
+          "chrome": "10.8",
+          "safari": "6.1"
         },
         "useBuiltIns": "usage",
         "corejs": "3.6.5"

@@ -1,0 +1,130 @@
+.slider {
+  position: relative;
+  margin: auto;
+}
+.slider__slides {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.slider__slideLayout {
+  width: 92%;
+  box-sizing: border-box;
+}
+.slider__slide {
+  height: 250px;
+  padding: 25px 27px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 13px;
+  white-space: pre-wrap;
+  color: #050C42;
+  text-align: left;
+  overflow: hidden;
+}
+.slider__slide,
+.slider__circles {
+  transition: transform 0.25s ease-in;
+}
+.slider__slide:hover {
+  transform: scale(0.98);
+}
+.slider__slide--BGGreen {
+  background-color: #B6E9C4;
+}
+.slider__slide--BGPink {
+  background-color: #F6D6FE;
+}
+.slider__slide--BGBlue {
+  background-color: #8FE8FF;
+}
+.slider__slide--BGCoral {
+  background-color: #FFC1A6;
+}
+.slider__text {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+.slider__text,
+.slider__link {
+  position: relative;
+  color: #050C42;
+}
+.slider__chevronIcon {
+  position: relative;
+  vertical-align: middle;
+}
+.slider__image {
+  max-width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.slider__circles {
+  max-width: 64%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.slider__slide:hover .slider__circles {
+  transform: scale(1.1);
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+.slider__button {
+  width: 64px;
+  height: 64px;
+  margin: auto 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.slider__button--prev {
+  transform: rotateY(180deg);
+}
+.slider__button--next {
+  right: 0;
+}
+.slider__buttonBG {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+}
+@media (min-width: 768px) {
+  .slider__slideLayout {
+    width: 510px;
+    padding: 0 65px 0 0;
+  }
+  .slider__slide {
+    width: 445px;
+  }
+  .slider__image,
+  .slider__circles
+   {
+    max-width: unset;
+  }
+  .slider__image--building {
+    width: 236px;
+    height: 175px;
+  }
+  .slider__image--loupe {
+    width: 203px;
+    height: 184px;
+  }
+  .slider__image--mercedes {
+    width: 236px;
+    bottom: 37px;
+  }
+}
