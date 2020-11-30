@@ -1,0 +1,195 @@
+.header {
+  width: 100%;
+  min-height: 124px;
+  max-width: 1680px;
+  margin: auto;
+}
+.header__linksSection {
+  padding: 17px 31px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header__links {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+.header__link {
+  margin-right: 25px;
+  font-family: Formular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #050C42;
+  text-decoration: none;
+}
+.header__link--howToUse {
+  margin-right: 0;
+  color: #13B17C;
+}
+.header__navSection {
+  padding: 0 0 43px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__logo,
+.catalogAndSearch,
+.header__account {
+  margin: 21px auto 0;
+}
+.header__logo {
+  padding: 4px 24px 0 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.header__icons {
+  width: 54px;
+  height: 52px;
+  position: relative;
+}
+.header__icon {
+  position: absolute;
+}
+.header__icon--logoESmall {
+  top: 28px;
+  left: 28px;
+}
+.header__icon--logoI {
+  top: 22px;
+  left: 50px;
+}
+.header__icon--logoText {
+  padding: 0 0 0 12px;
+  position: static;
+}
+.header__catalogAndSearch {
+  padding: 0;
+}
+.catalogAndSearch {
+  height: 60px;
+  flex-grow: 1;
+}
+.catalogAndSearch__searchRadius {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 21px;
+  background-color: #FFFFFF;
+}
+.catalogAndSearch__catalog {
+  height: 100%;
+  padding: 12px 0 11px 22px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.catalogAndSearch__catalogText {
+  color: #13B17C;
+}
+.hamburgerButton {
+  width: 22px;
+  margin: 0 0 0 16px;
+}
+.hamburgerButton__line {
+  height: 2px;
+  margin-bottom: 4px;
+  background-color: #13B17C;
+  border-radius: 1px;
+}
+.hamburgerButton__line--bottom {
+  margin-bottom: 0;
+}
+.catalogAndSearch__searchSeparator {
+  width: 37px;
+  height: 0px;
+  border-top: 1px solid #D1DAE6;
+  transform: rotate(90deg);
+  opacity: 0.4;
+}
+.catalogAndSearch__searchForm {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-grow: 1;
+}
+.searchForm__searchInput::placeholder {
+  color: #D1DAE6;
+}
+.searchForm__searchInput {
+  width: 100%;
+  padding: 0 20px 0 0;
+}
+.searchForm__searchSubmit {
+  height: 20px;
+  transform: translateX(-100%);
+}
+.header__account {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.account__link {
+  text-align: center;
+}
+.account__link--profile {
+  margin: 0px 22px 0;
+}
+.account__link--favorites {
+  margin: 0 14px 0 22px;
+}
+.account__link--savedSearches {
+  margin: 0 10px 0 14px;
+}
+.account__link--notifications {
+  margin: 0 0 0 10px;
+}
+.account__icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin: auto;
+  line-height: 32px;
+  font-size: 0;
+}
+.account__svg {
+  vertical-align: middle;
+}
+.account__linkText {
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: #050C42;
+  white-space: pre-wrap;
+}
+.account__linkText--wrap {
+  margin: 0px 0 -15px 0;
+}
+.account__notificationsCount {
+  position: absolute;
+  top: -8%;
+  right: -20%;
+  padding: 0 3px;
+  line-height: normal;
+  background-color: #FC5555;
+  border-radius: 5px;
+}
+.account__notificationsCountContent {
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+}
+@media (min-width: 414px) {
+  .header__catalogAndSearch {
+    padding: 0 20px 0 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .header__account {
+    padding: 0 34px 0 0px;
+  }
+}
